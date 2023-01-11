@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    min-height: 100vh;
+    font-size: 15px;
+    display: grid;
+    place-content: center;
+}
+
+main {
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 400px 300px, cover;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.container2 {
+    display: flex;
+}
+
+h1 {
+    font-size: 3rem;
+    color: hsl(300, 43%, 22%);
+    width: 400px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+h3 {
+    color: hsl(333, 80%, 67%);
+    margin: 5px 0 0 0;
+}
+
+p {
+    width: 400px;
+    line-height: 1.5;
+}
+
+.company-reviews {
+    display: row;
+    align-self: center;
+}
+
+.reviews {
+    background: hsl(300, 24%, 96%);
+    padding: 10px 30px 10px 30px;
+    border-radius: 7px;
+    margin: 20px 100px 0 0;
+}
+
+.company-reviews p {
+    display: inline;
+    margin: 0 0 0 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: bolder;
+}
+
+.report-guru {
+    background: hsl(300, 24%, 96%);
+    padding: 10px 30px 10px 30px;
+    border-radius: 7px;
+    margin: 20px 50px 0 50px;
+}
+
+.report-guru p {
+    display: inline;
+    margin: 0 0 0 10px;
+}
+
+.besttech {
+    background: hsl(300, 24%, 96%);
+    padding: 10px 30px 10px 30px;
+    border-radius: 7px;
+    margin: 20px 0 0 100px;
+}
+
+.besttech p {
+    display: inline;
+    margin: 0 0 0 10px;
+}
+
+.review-colton {
+    background: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 30px;
+    display: column;
+}
+
+.review-colton p {
+    width: 270px;
+}
+
+.review-irene {
+    background: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 25px;
+    display: column;
+}
+
+.review-irene p {
+    width: 270px;
+}
+
+.review-anne {
+    background: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 25px;
+    display: column;
+}
+
+.review-anne p {
+    width: 270px;
+}
+
+.reviewer-pfp {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 25px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    main {
+        background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: 400px 200px, cover;
+        text-align: center;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews {
+        margin: 20px 0 0 0;
+    }
+
+    .report-guru {
+        margin: 20px 0 0 0;
+    }
+
+    .besttech {
+        margin: 20px 0 0 0;
+    }
+
+    .review-colton {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .review-irene {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .company-reviews p {
+        display: grid;
+        margin-top: 5px;
+    }
+
+
+
+}
